@@ -103,6 +103,15 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  programs.git = {
+    enable = true;
+    config = {
+      user.name = "zhaoxiuya";
+      user.email = "zhaoxiuya13@gmail.com";
+    };
+  };
+
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
