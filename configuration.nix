@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-#      ./kime
+      ./bluetooth.nix
     ];
 
   # Bootloader.
@@ -62,7 +62,6 @@
     variant = "";
   };
 
-  # Enable CUPS to print documents.
   services.printing.enable = true;
 
   # Enable sound with pipewire.
@@ -84,23 +83,20 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.zhaoxiuya = {
     isNormalUser = true;
     description = "zhaoxiuya";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
-    #  thunderbird
+      thunderbird
     ];
   };
 
-  # Install firefox.
   programs.firefox.enable = true;
-  # programs.ssh.enable = true;
+  
   programs.ssh.startAgent = true;
 
-  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   programs.git = {
@@ -111,9 +107,6 @@
     };
   };
 
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim neovim
     wget git openssh
