@@ -10,12 +10,15 @@
   outputs = { self, nixpkgs, flake-utils, catppuccin, ... }:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs { inherit system; };
+      pkgs = import nixpkgs {
+        inherit system;
+        config = {};
+      };
     in
     {
       nixosConfigurations = {
         nixos = pkgs.nixosSystem {
-        inherit system;
+          inherit system;
           modules = [ ./configuration.nix ];
         };
       };
