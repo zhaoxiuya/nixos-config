@@ -1,7 +1,7 @@
 { inputs, config, pkgs, ... }:
 
 let 
-  myFlavour = "mocha";
+  myFlavor = "mocha";
   myTheme = "Catppuccin-Macha";
 in
 {
@@ -21,12 +21,12 @@ in
   
   catppuccin = {
     enable = true;
-    flavour = myFlavour;
+    flavor = myFlavor;
     gtk = {
       enable = true;
       icon = {
         enable = true;
-        flavor = myFlavour;
+        flavor = myFlavor;
       };
     };
   };
