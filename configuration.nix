@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ./bluetooth.nix
       ./kor.nix
+      ./plasma.nix
     ];
 
   # Bootloader.
@@ -24,16 +25,6 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   networking.networkmanager.enable = true;
-
-  services.xserver.enable = true;
-
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
-
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
 
   services.printing.enable = true;
 
