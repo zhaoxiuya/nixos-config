@@ -37,21 +37,21 @@ in
     catppuccin-gtk-papirus-folders
   ];
 
-  services.desktopManager.plasma6.settings = {
-    "org.kde.kdeglobals" = {
-      ColorScheme = myTheme;
-      widgetStyle = "Breeze";
-    };
-    "org.kde.plasma.desktop" = {
-      lookAndFeel = myTheme;
-    };
-    "org.kde.kdecoration2" = {
-      library = myTheme;
-    };
-    "org.kde.iconThemes" = {
-      theme = myTheme;
-    };
-  };
+#  services.desktopManager.plasma6.settings = {
+#    "org.kde.kdeglobals" = {
+#      ColorScheme = myTheme;
+#      widgetStyle = "Breeze";
+#    };
+#    "org.kde.plasma.desktop" = {
+#      lookAndFeel = myTheme;
+#    };
+#    "org.kde.kdecoration2" = {
+#      library = myTheme;
+#    };
+#    "org.kde.iconThemes" = {
+#      theme = myTheme;
+#    };
+#  };
 
 #  environment.systemPackages = with pkgs; [
 #    catppuccin-kvantum
