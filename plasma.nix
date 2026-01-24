@@ -34,6 +34,8 @@ in
   environment.systemPackages = with pkgs; [
     catppuccin-kvantum
     catppuccin-kde
+    kdePackages.qtstyleplugin-kvantum
+    kdePackages.kvantum
 #    catppuccin-gtk-papirus-folders
   ];
 
