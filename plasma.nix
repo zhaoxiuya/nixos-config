@@ -22,14 +22,20 @@ in
   catppuccin = {
     enable = true;
     flavor = myFlavor;
-    gtk = {
-      enable = true;
-      icon = {
-        enable = true;
-        flavor = myFlavor;
-      };
-    };
+#    gtk = {
+#      enable = true;
+#      icon = {
+#        enable = true;
+#        flavor = myFlavor;
+#      };
+#    };
   };
+ 
+  environment.systemPackages = with pkgs; [
+    catppuccin-kvantum
+    catppuccin-kde
+    catppuccin-gtk-papirus-folders
+  ];
 
   services.desktopManager.plasma6.settings = {
     "org.kde.kdeglobals" = {
