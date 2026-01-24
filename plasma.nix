@@ -1,8 +1,8 @@
 { inputs, config, pkgs, ... }:
 
 let 
-  myFlavour = "Mocha";
-  myTheme = "Catppuccin-${myFlavour}";
+  myFlavour = "mocha";
+  myTheme = "Catppuccin-Macha";
 in
 {
   services.xserver.enable = true;
@@ -21,12 +21,12 @@ in
   
   catppuccin = {
     enable = true;
-    flavour = builtins.toLower myFlavour;
+    flavour = myFlavour;
     gtk = {
       enable = true;
       icon = {
         enable = true;
-        flavor = builtins.toLower myFlavour;
+        flavor = myFlavour;
       };
     };
   };
