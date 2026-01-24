@@ -17,7 +17,7 @@
       ./hardware-configuration.nix
       ./bluetooth.nix
       ./kor.nix
-      ./plasma-tmp.nix
+      ./plasmaw.nix
     ];
 
   # Bootloader.
