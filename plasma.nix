@@ -16,7 +16,7 @@ in
   };
 
   imports = [
-    (import (builtins.fetchTarball "https://github.com/catppuccin/nix/archive/refs/heads/main.tar.gz"))
+    inputs.catppuccin.nixosModules.catppuccin
   ];
   
   catppuccin = {
