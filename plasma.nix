@@ -58,10 +58,10 @@ in
 #    libsForQt5.qtstyleplugin-kvantum
 #  ];
 
-  xsession.windowManager.session = {
-    qt = {
-      style.name = "kvantum";
-      theme = myTheme;
-    };
-  };
+#  xsession.windowManager.session = {
+#    qt = {
+#      style.name = "kvantum";
+#      theme = myTheme;
+#    };
+#  };
 }
