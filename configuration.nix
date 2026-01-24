@@ -76,7 +76,7 @@
   environment.systemPackages = with pkgs; [
     vim neovim neofetch
     wget git openssh
-    zed-editor
+    zed-editor tree
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
