@@ -2,7 +2,7 @@
 
 let 
   myFlavour = "Mocha";
-  myTheme = "Catppuccin-${catppuccinFlavor}";
+  myTheme = "Catppuccin-${myFlavour}";
 in
 {
   services.xserver.enable = true;
@@ -21,12 +21,12 @@ in
   
   catppuccin = {
     enable = true;
-    flavour = "mocha";
+    flavour = builtins.toLower myFlavour;
     gtk = {
       enable = true;
       icon = {
         enable = true;
-        flavor = true;
+        flavor = builtins.toLower myFlavour;
       };
     };
   };
@@ -48,7 +48,7 @@ in
   };
 
   environment.systemPackages = with pkgs; [
-    catppuccin-kvantum;
+    catppuccin-kvantum
     libsForQt5.qtstyleplugin-kvantum
   ];
 
