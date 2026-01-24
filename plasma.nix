@@ -34,7 +34,7 @@ in
   environment.systemPackages = with pkgs; [
     catppuccin-kvantum
     catppuccin-kde
-    catppuccin-gtk-papirus-folders
+#    catppuccin-gtk-papirus-folders
   ];
 
 #  services.desktopManager.plasma6.settings = {
