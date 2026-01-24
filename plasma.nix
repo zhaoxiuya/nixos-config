@@ -35,7 +35,7 @@ in
     catppuccin-kvantum
     catppuccin-kde
     kdePackages.qtstyleplugin-kvantum
-    kdePackages.kvantum
+    kvantum
 #    catppuccin-gtk-papirus-folders
   ];
 
