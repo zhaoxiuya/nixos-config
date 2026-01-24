@@ -53,10 +53,10 @@ in
     };
   };
 
-  environment.systemPackages = with pkgs; [
-    catppuccin-kvantum
-    libsForQt5.qtstyleplugin-kvantum
-  ];
+#  environment.systemPackages = with pkgs; [
+#    catppuccin-kvantum
+#    libsForQt5.qtstyleplugin-kvantum
+#  ];
 
   xsession.windowManager.session = {
     qt = {
