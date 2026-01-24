@@ -13,11 +13,11 @@
         pkgs = import nixpkgs { inherit system; };
       in
       {
-        nixosConfigurations.nixos = pkgs.nixosSystem {
-          system = system;
-          modules = [
-            ./configuration.nix
-          ];
+        nixosConfigurations = {
+          nixos = pkgs.nixosSystem = {
+            inherit system;
+            modules = [ ./configuration.nix ];
+          };
         };
       }
     );
