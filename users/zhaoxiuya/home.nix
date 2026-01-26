@@ -3,12 +3,12 @@
 {
   imports = [
     inputs.stylix.homeModules.stylix
+    ./stylix
     ./neovim.nix
     ./git.nix
     # ./bash.nix
     ./zsh.nix
     ./kitty.nix
-    ./stylix.nix
   ];
 
   home.stateVersion = "25.11";
