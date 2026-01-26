@@ -11,6 +11,6 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    vim neovim neofetch wget git openssh tree
+    vim neovim neofetch wget git openssh tree btop
   ];
 }
