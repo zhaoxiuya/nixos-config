@@ -8,7 +8,7 @@
     catppuccin.url = "github:catppuccin/nix";
   };
 
-  outputs = { self, nixpkgs, catppuccin, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, catppuccin, ... }@inputs: {
     nixosConfigurations.iridium = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; }; 
