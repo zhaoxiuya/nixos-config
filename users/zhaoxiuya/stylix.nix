@@ -15,6 +15,6 @@
     targets = {
       kitty.enable = true;
       zsh.enable = true;
-    }
+    };
   };
 }
