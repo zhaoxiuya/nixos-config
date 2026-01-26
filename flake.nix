@@ -20,7 +20,7 @@
 	    useGlobalPkgs = true;
 	    useUserPackages = true;
             users.zhaoxiuya = import ./users/zhaoxiuya/home.nix;
-	    extraSpecialArgs = { inherit inputs };
+	    extraSpecialArgs = { inherit inputs; };
 	  };
 	}
       ];
