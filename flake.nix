@@ -15,14 +15,15 @@
       modules = [
       	./hosts/iridium
       	home-manager.nixosModules.home-manager
-	{
-	  home-manager = {
-	    useGlobalPkgs = true;
-	    useUserPackages = true;
+        stylix.nixosModules.stylix
+        {
+	        home-manager = {
+	          useGlobalPkgs = true;
+	          useUserPackages = true;
             users.zhaoxiuya = import ./users/zhaoxiuya/home.nix;
-	    extraSpecialArgs = { inherit inputs; };
-	  };
-	}
+	          extraSpecialArgs = { inherit inputs; };
+	        };
+      	}
       ];
     };
   };
