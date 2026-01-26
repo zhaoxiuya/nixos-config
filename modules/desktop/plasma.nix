@@ -14,6 +14,8 @@
     kdePackages.spectacle
     kdePackages.qtstyleplugin-kvantum
     libsForQt5.qtstyleplugin-kvantum
+    kdePackages.qtwayland
+    kdePackages.qtsvg
   ];
 
 }
