@@ -12,5 +12,5 @@
       vim.opt.smartident = true
       vim.opt.number = true
     '';
-  }
+  };
 }
