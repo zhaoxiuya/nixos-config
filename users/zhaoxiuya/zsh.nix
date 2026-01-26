@@ -10,16 +10,16 @@
     plugins = [
       {
         name = "pure";
-        src = pkgs.zsh-pure;
+        src = pkgs.pure-prompt;
         file = "share/zsh/site-functions/async.zsh";
       }
       {
         name = "pure";
-        src = pkgs.zsh-pure;
+        src = pkgs.pure-prompt;
         file = "share/zsh/site-functions/pure.zsh";
       }
     ];
-    initExtra = ''
+    initContent = ''
       autoload -U promptinit; promptinit
       prompt pure
     '';
