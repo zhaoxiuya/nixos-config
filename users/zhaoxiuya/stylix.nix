@@ -12,9 +12,9 @@
       };
       sizes.terminal = 12;
     };
-    targets = {
-      kitty.enable = true;
-      zsh.enable = true;
-    };
+    #targets = {
+    #  kitty.enable = true;
+    #  zsh.enable = true;
+    #};
   };
 }
