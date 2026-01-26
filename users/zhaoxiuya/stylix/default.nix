@@ -13,9 +13,16 @@
       };
       sizes.terminal = 12;
     };
-    #targets = {
-    #  kitty.enable = true;
-    #  zsh.enable = true;
-    #};
+
+    targets = {
+      kde.enable = false;
+      kvantum.enable = false;
+    };
+
+    qt = {
+      enable = true;
+      platformTheme = "kde";
+      style.name = "breeze";
+    };
   };
 }
