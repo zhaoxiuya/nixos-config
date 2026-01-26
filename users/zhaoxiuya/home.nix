@@ -1,6 +1,10 @@
 { pkgs, config, ... }:
 
 {
+  imports = [
+    neovim.nix
+  ];
+
   home.stateVersion = "25.11";
 
   home.packages = with pkgs; [
