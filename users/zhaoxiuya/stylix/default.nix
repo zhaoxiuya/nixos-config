@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ pkgs, config, libs, ... }:
 
 {
   stylix = {
@@ -16,11 +16,12 @@
 
     targets = {
       kde.enable = false;
+      gnome.enable = false;
     };
   };
   qt = {
     enable = true;
-    platformTheme = "kde";
-    style.name = "breeze";
+    platformTheme.name = lib.mkForce "kde";
+    style.name = lib.mkForce "breeze";
   };
 }
