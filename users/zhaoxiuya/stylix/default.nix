@@ -18,11 +18,10 @@
       kde.enable = false;
       kvantum.enable = false;
     };
-
-    qt = {
-      enable = true;
-      platformTheme = "kde";
-      style.name = "breeze";
-    };
+  };
+  qt = {
+    enable = true;
+    platformTheme = "kde";
+    style.name = "breeze";
   };
 }
