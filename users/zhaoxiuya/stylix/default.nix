@@ -16,7 +16,6 @@
 
     targets = {
       kde.enable = false;
-      kvantum.enable = false;
     };
   };
   qt = {
