@@ -5,7 +5,7 @@
     isNormalUser = true;
     shell = pkgs.zsh;
     description = "zhaoxiuya";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     packages = [];
   };
 
