@@ -3,7 +3,6 @@
 {
   programs.kitty = {
     enable = true;
-    shell = pkgs.zsh;
 
     font = {
       name = "Monoid";
@@ -14,6 +13,7 @@
 
     settings = {
       cursor_shape = "beam";
+      shell = pkgs.zsh;
     };
   };
 }
