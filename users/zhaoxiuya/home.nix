@@ -2,6 +2,7 @@
 
 {
   imports = [
+    inputs.stylix.homeManagerModules.stylix
     ./neovim.nix
     ./git.nix
     # ./bash.nix
