@@ -8,6 +8,9 @@
     ./audio.nix
     ./network.nix
     ./printer.nix
-    ./packages.nix
+  ];
+
+  environment.systemPackages = with pkgs; [
+    vim neovim neofetch wget git openssh tree
   ];
 }
