@@ -13,7 +13,7 @@
 
     settings = {
       cursor_shape = "beam";
-    }
+    };
   };
 }
 
