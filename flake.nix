@@ -9,7 +9,7 @@
     stylix.url = "github:danth/stylix";
   };
 
-  outputs = { self, nixpkgs, home-manager, catppuccin, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, stylix, catppuccin, ... }@inputs: {
     nixosConfigurations.iridium = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; }; 
