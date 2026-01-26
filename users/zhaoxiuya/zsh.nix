@@ -10,12 +10,12 @@
     plugins = [
       {
         name = "pure";
-        src = pkgs.zsh.pure;
+        src = pkgs.zsh-pure;
         file = "share/zsh/site-functions/async.zsh";
       }
       {
         name = "pure";
-        src = pkgs.zsh.pure;
+        src = pkgs.zsh-pure;
         file = "share/zsh/site-functions/pure.zsh";
       }
     ];
