@@ -20,7 +20,9 @@
       }
     ];
     initContent = ''
+      source ${pkgs.pure-prompt}/share/zsh/site-functions/async.zsh
       autoload -U promptinit; promptinit
+      fpath+=( "${pkgs.pure-prompt}/share/zsh/site-functions" )
       prompt pure
     '';
 
