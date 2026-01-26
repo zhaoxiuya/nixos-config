@@ -7,6 +7,7 @@
     # ./bash.nix
     ./zsh.nix
     ./kitty.nix
+    ./stylix.nix
   ];
 
   home.stateVersion = "25.11";
