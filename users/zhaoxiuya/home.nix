@@ -3,7 +3,7 @@
 {
   imports = [
     ./neovim.nix
-    ./home.nix
+    ./git.nix
     ./bash.nix
   ];
 
