@@ -6,6 +6,7 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     catppuccin.url = "github:catppuccin/nix";
+    stylix.url = "github:danth/stylix";
   };
 
   outputs = { self, nixpkgs, home-manager, catppuccin, ... }@inputs: {
