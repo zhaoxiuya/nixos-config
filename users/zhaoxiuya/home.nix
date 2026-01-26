@@ -9,10 +9,9 @@
 
   programs.git = {
     enable = true;
-    config = {
-      user.name = "zhaoxiuya";
-      user.email = "zhaoxiuya12@gmail.com";
-    };
+    userName = "zhaoxiuya";
+    userEmail = "zhaoxiuya13@gmail.com";
+    extraConfig.core.editor = "nvim";
   };
 
   programs.bash = {
