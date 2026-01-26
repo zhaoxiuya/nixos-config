@@ -9,9 +9,11 @@
 
   programs.git = {
     enable = true;
-    userName = "zhaoxiuya";
-    userEmail = "zhaoxiuya13@gmail.com";
-    extraConfig.core.editor = "nvim";
+    user = {
+      name = "zhaoxiuya";
+      email = "zhaoxiuya13@gmail.com";
+    };
+    settings.core.editor = "nvim";
   };
 
   programs.bash = {
