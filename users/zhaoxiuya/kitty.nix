@@ -9,7 +9,7 @@
       size = 13;
     };
 
-    themeFile = "GruvboxMaterialDarkHard";
+    themeFile = "Catppuccin-Mocha";
 
     settings = {
       cursor_shape = "beam";
