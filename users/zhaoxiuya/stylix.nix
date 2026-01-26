@@ -10,7 +10,7 @@
         package = pkgs.nerd-fonts.jetbrains-mono;
         name = "JetBrainsMono Nerd Font";
       };
-      size.terminal = 12;
+      sizes.terminal = 12;
     };
     targets = {
       kitty.enable = true;
