@@ -3,6 +3,8 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
     catppuccin.url = "github:catppuccin/nix";
   };
 
@@ -10,7 +12,18 @@
     nixosConfigurations.iridium = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; }; 
-      modules = [ ./hosts/iridium ];
+      modules = [
+      	./hosts/iridium
+      	home-manager.nixosModules.home-manager
+	{
+	  home-manager = {
+	    useGlobalPkgs = true;
+	    useUserPackages = true;
+            users.zhaoxiuya = import ./users/zhaoxiuya/home.nix;
+	    extraSpecialArgs = { inherit inputs };
+	  };
+	}
+      ];
     };
   };
 }
