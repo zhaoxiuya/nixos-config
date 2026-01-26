@@ -16,6 +16,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  hardware.graphics.enable = true;
   networking.hostName = "iridium";
   system.stateVersion = "25.11";
 }
