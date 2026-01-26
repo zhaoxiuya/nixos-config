@@ -23,6 +23,7 @@
 	          useUserPackages = true;
             users.zhaoxiuya = import ./users/zhaoxiuya/home.nix;
 	          extraSpecialArgs = { inherit inputs; };
+            backupFileExtension = "backup";
 	        };
       	}
       ];
