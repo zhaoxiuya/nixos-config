@@ -10,6 +10,10 @@
     };
 
     themeFile = "GruvboxMaterialDarkHard";
+
+    settings = {
+      cursor_shape = "beam";
+    }
   };
 }
 
