@@ -4,7 +4,8 @@
   imports = [
     ./neovim.nix
     ./git.nix
-    ./bash.nix
+    # ./bash.nix
+    ./zsh.nix
   ];
 
   home.stateVersion = "25.11";
