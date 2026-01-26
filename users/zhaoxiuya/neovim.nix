@@ -4,7 +4,7 @@
   programs.neovim = {
     enable = true;
     defaultEditor = true;
-    extraLuaConfig = ''
+    initLua = ''
       vim.opt.expandtab = true
       vim.opt.shiftwidth = 2
       vim.opt.tabstop = 2
