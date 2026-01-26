@@ -6,11 +6,14 @@
     ./git.nix
     # ./bash.nix
     ./zsh.nix
+    ./home.nix
   ];
 
   home.stateVersion = "25.11";
 
   home.packages = with pkgs; [
-    discord zed-editor
+    discord
+    zed-editor
+    nerd-fonts.monoid
   ];
 }
