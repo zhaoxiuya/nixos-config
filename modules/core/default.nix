@@ -1,5 +1,9 @@
-{ pkgs, config, system ? pkgs.system, inputs, ... }:
+{ pkgs, config, inputs, ... }:
 
+
+let
+  system = pkgs.system
+in
 {
   imports = [
     ./kime.nix
