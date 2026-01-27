@@ -7,8 +7,8 @@ in
   home.packages = with pkgs; [
     freerdp
     libnotify
-    winapps.packages."${system}".winapps
-    winapps.packages."${system}".winapps-launcher
+    inputs.winapps.packages."${system}".winapps
+    inputs.winapps.packages."${system}".winapps-launcher
   ];
 
   home.file.".config/winapps/winapps.conf".text = ''
