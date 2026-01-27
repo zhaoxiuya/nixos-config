@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./kor.nix
+    ./kime.nix
     ./nix.nix
     ./bluetooth.nix
     ./audio.nix
