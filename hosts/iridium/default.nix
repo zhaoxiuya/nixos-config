@@ -22,6 +22,8 @@
   };
 
   virtualisation.libvirtd.enable = true;
+  virtualisation.docker.enable = true;
+
   hardware.graphics.enable = true;
 
   networking.hostName = "iridium";

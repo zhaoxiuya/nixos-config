@@ -10,6 +10,7 @@
       "wheel"
       "libvirtd"
       "kvm"
+      "docker"
     ];
     packages = [ ];
   };

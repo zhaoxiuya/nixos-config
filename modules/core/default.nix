@@ -20,6 +20,7 @@
     tree
     btop
 
+    docker
     virt-viewer
     spice-gtk
     virtio-win
