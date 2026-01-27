@@ -18,5 +18,7 @@ in
     RDP_IP="192.168.122.105"
     VM_NAME="win10"
     WAFLAVOR="libvirt"
+    APP_SCAN_TIMEOUT="120"
+    DEBUG="true"
   '';
 }
