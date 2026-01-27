@@ -24,7 +24,9 @@
     virt-viewer
     spice-gtk
     virtio-win
-    winapps.packages."${system}".winapps
-    winapps.packages."${system}".winapps-launcher
+    netcat-gnu
+
+    inputs.winapps.packages."${system}".winapps
+    inputs.winapps.packages."${system}".winapps-launcher
   ];
 }
