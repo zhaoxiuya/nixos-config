@@ -18,7 +18,7 @@
     username = "zhaoxiuya";
     homeDirectory = "/home/zhaoxiuya";
     stateVersion = "25.11";
-  }
+  };
 
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
