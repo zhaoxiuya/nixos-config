@@ -1,7 +1,8 @@
-{ pkgs
-, config
-, lib
-, ...
+{
+  pkgs,
+  config,
+  lib,
+  ...
 }:
 {
   stylix = {
@@ -30,8 +31,8 @@
     };
 
     targets = {
-      kde.enable = false;
-      gnome.enable = false;
+      # kde.enable = false;
+      # gnome.enable = false;
     };
   };
   qt = {

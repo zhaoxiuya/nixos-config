@@ -8,14 +8,8 @@
     stylix.url = "github:danth/stylix";
   };
 
-  outputs =
-    { self
-    , nixpkgs
-    , home-manager
-    , stylix
-    , ...
-    }@inputs:
-    {
+  outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs:
+  {
       formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixfmt-tree;
       settings.formatter.nixfmt.options = [ "--width" "120" ];
       nixosConfigurations.iridium = nixpkgs.lib.nixosSystem {
@@ -24,8 +18,7 @@
         modules = [
           ./hosts/iridium
           home-manager.nixosModules.home-manager
-          stylix.nixosModules.stylix
-          {
+          stylix.nixosModules.stylix {
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
