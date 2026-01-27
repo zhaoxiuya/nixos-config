@@ -37,8 +37,13 @@
         inputs.enable = true;
         profileNames = [ "zhaoxiuya" ];
       };
+      vesktop = {
+        enable = true;
+      };
     };
   };
+
+
   qt = {
     enable = true;
     platformTheme.name = lib.mkForce "kde";
