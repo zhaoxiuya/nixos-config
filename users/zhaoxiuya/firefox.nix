@@ -5,7 +5,7 @@
     enable = true;
     profiles.zhaoxiuya = {
       isDefault = true;
-      path = "zhaoxiuya";
+      #path = "zhaoxiuya";
       settings = {
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
       };
