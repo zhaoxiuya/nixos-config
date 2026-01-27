@@ -13,6 +13,8 @@
     efi.canTouchEfiVariables = true;
   };
 
+  boot.kernelModules = [ "kvm-intel" ];
+
   programs = {
     zsh.enable = true;
     virt-manager.enable = true;
