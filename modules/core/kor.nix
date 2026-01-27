@@ -17,21 +17,12 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-#  programs.kime.enable = true;
-  environment.systemPackages = [
-    pkgs.kime
-  ];
-
   i18n.inputMethod = {
     enable = true;
-    type = "kime";
-    kime.iconColor = "White";
-  };
-
-  environment.sessionVariables = {
-    GTK_IM_MODULE = "kime";
-    QT_IM_MODULE = "kime";
-    XMODIFIERS = "@im=kime";
-    GLFW_IM_MODULE = "ibus";
+    type = "fcitx5";
+    fcitx5.addons = with pkgs; [
+      fcitx5-hangul
+      fcitx5-gtk
+    ];
   };
 }
