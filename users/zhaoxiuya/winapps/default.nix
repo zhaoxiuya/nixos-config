@@ -15,6 +15,6 @@ in
     RDP_USER="zhaoxiuya"
     RDP_PASS="1234"
     RDP_IP="192.168.122.186"
-    VM_NAME="RDPWindows"
+    VM_NAME="win10"
   '';
 }
