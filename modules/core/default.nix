@@ -25,6 +25,7 @@ in
     btop
     docker
 
+    libvirtd
     qemu_kvm
     virt-viewer
     spice-gtk

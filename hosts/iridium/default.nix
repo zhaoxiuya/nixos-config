@@ -21,10 +21,6 @@
     ssh.startAgent = true;
   };
 
-  services.libvirtd = {
-    enable = true;
-  };
-
   virtualisation.libvirtd.enable = true;
   virtualisation.docker.enable = true;
 
