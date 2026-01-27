@@ -17,7 +17,7 @@
   programs = {
     virt-manager.enable = true;
     ssh.startAgent = true;
-  }
+  };
 
   virtualisation.libvirtd.enable = true;
   hardware.graphics.enable = true;
