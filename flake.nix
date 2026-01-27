@@ -16,6 +16,7 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
+          ./users/zhaoxiuya/stylix/default.nix
           ./hosts/iridium
           home-manager.nixosModules.home-manager
           stylix.nixosModules.stylix {
