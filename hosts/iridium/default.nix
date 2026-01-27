@@ -14,6 +14,7 @@
   };
 
   programs = {
+    zsh.enable = true;
     virt-manager.enable = true;
     ssh.startAgent = true;
   };
