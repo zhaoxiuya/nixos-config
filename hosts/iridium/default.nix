@@ -6,7 +6,6 @@
     ./hardware-configuration.nix
     ../../modules/core
     ../../modules/desktop
-    ../../users/zhaoxiuya/home.nix
   ];
 
   boot.loader = {
