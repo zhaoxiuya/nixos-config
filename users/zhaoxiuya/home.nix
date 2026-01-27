@@ -12,19 +12,14 @@
     ./zed-editor.nix
     ./firefox.nix
     ./discord.nix
+    ./fonts.nix
   ];
+
+  programs.home-manager.enable = true;
 
   home = {
     username = "zhaoxiuya";
     homeDirectory = "/home/zhaoxiuya";
     stateVersion = "25.11";
   };
-
-  fonts.fontconfig.enable = true;
-  home.packages = with pkgs; [
-    nanum
-    noto-fonts-cjk-sans
-    noto-fonts-cjk-serif
-    d2coding
-  ];
 }
