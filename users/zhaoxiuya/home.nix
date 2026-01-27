@@ -8,6 +8,7 @@
 {
   imports = [
     inputs.stylix.homeModules.stylix
+    inputs.nixcord.homeModules.nixcord
     ./stylix
     ./neovim.nix
     ./git.nix
@@ -15,7 +16,7 @@
     ./kitty.nix
     ./zed-editor.nix
     ./firefox.nix
-    ./vesktop.nix
+    ./discord.nix
   ];
 
   home.packages = with pkgs; [
