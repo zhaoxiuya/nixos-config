@@ -30,4 +30,6 @@
     GTK_IM_MODULE = "kime";
     XMODIFIERS = "@im=kime";
   };
+
+  environment.systemPackages = with pkgs; [ kime ];
 }
