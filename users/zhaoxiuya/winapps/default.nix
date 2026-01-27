@@ -16,7 +16,8 @@ in
     RDP_USER="zhaoxiuya"
     RDP_PASS="1234"
     RDP_IP="192.168.122.105"
-    WAFLAVOR="manual"
+    VM_NAME="win10"
+    WAFLAVOR="libvirt"
     APP_SCAN_TIMEOUT="120"
     DEBUG="true"
   '';
