@@ -16,7 +16,7 @@
 
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
-    nanum-fonts
+    nanum-font-family
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
     d2coding
