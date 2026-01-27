@@ -22,7 +22,7 @@
     type = "kime";
   };
 
-  enviroment.sessionVariables = {
+  environment.sessionVariables = {
     GTK_IM_MODULE = "kime";
     QT_IM_MODULE = "kime";
     XMODIFIERS = "@im=kime";
