@@ -18,6 +18,9 @@
   };
 
 #  programs.kime.enable = true;
+  environment.systemPackages = [
+    pkgs.kime
+  ];
 
   i18n.inputMethod = {
     enable = true;
