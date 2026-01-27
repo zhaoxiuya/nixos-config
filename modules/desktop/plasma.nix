@@ -1,9 +1,5 @@
-{
-  inputs,
-  config,
-  pkgs,
-  ...
-}:
+{ pkgs, config, inputs, ... }:
+
 {
   services.xserver.enable = true;
   services.displayManager.sddm.enable = true;

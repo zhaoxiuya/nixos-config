@@ -1,8 +1,5 @@
-{
-  pkgs,
-  config,
-  ...
-}:
+{ pkgs, config, ... }:
+
 {
   users.users.zhaoxiuya = {
     isNormalUser = true;

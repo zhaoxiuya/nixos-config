@@ -1,8 +1,5 @@
-{
-  config,
-  pkgs,
-  ...
-}:
+{ pkgs, config, ... }:
+
 {
   time.timeZone = "Asia/Seoul";
 

@@ -1,9 +1,4 @@
-{
-  pkgs,
-  config,
-  inputs,
-  ...
-}:
+{ pkgs, config, inputs ... }:
 
 {
   imports = [
@@ -19,7 +14,12 @@
     ./discord.nix
   ];
 
+  fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
+    nanum-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-cjk-serif
+    d2coding
   ];
 
   home.stateVersion = "25.11";
