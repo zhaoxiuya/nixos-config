@@ -2,6 +2,5 @@
 
 {
   programs.discord = {
-    enable = true;
   };
 }
