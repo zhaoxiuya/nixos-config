@@ -14,11 +14,13 @@ in
 
   home.file.".config/winapps/winapps.conf".text = ''
     RDP_USER="zhaoxiuya"
+    RDP_DOMAIN="DESKTOP-MO4TLIC"
     RDP_PASS="1234"
     RDP_IP="192.168.122.105"
     VM_NAME="win10"
     WAFLAVOR="libvirt"
     APP_SCAN_TIMEOUT="120"
     DEBUG="true"
+    FREERDP_COMMAND="xfreerdp"
   '';
 }
