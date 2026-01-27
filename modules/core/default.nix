@@ -24,13 +24,10 @@ in
     tree
     btop
 
-    docker
+    qemu_kvm
     virt-viewer
     spice-gtk
     virtio-win
     netcat-gnu
-
-    inputs.winapps.packages."${system}".winapps
-    inputs.winapps.packages."${system}".winapps-launcher
   ];
 }
