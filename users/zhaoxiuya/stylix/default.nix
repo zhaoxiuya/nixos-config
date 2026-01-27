@@ -24,8 +24,8 @@
         name = "Noto Color Emoji";
       };
       sizes.terminal = 12;
-    };
-
+    };  
+  
     targets = {
       # kde.enable = false;
       # gnome.enable = false;
