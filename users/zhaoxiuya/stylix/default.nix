@@ -37,7 +37,7 @@
         colors.enable = true;
         fonts.enable = true;
         inputs.enable = true;
-        profileNames = [ "test" "zhaoxiuya" ];
+        profileNames = [ "zhaoxiuya" ];
       };
     };
   };
