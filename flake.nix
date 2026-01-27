@@ -26,7 +26,6 @@
               extraSpecialArgs = { inherit inputs; };
               backupFileExtension = "${self.lastModifiedDate}.backup";
             };
-            homeManagerIntegration = true;
           }
         ];
       };

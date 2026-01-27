@@ -31,8 +31,12 @@
     targets = {
       # kde.enable = false;
       # gnome.enable = false;
-      firefox = {
+      stylix.targets.firefox = {
         enable = true;
+        colorTheme.enable = true;
+        colors.enable = true;
+        fonts.enable = true;
+        inputs.enable = true;
         profileNames = [ "zhaoxiuya" ];
       };
     };
