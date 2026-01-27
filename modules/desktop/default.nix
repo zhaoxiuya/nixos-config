@@ -2,8 +2,9 @@
   pkgs,
   config,
   ...
-}: {
-  imports = [./plasma.nix];
+}:
+{
+  imports = [ ./plasma.nix ];
 
   programs.firefox.enable = true;
 }

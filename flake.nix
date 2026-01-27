@@ -8,31 +8,33 @@
     stylix.url = "github:danth/stylix";
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    home-manager,
-    stylix,
-    ...
-  } @ inputs: {
-    formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixfmt-rfc-style;
-    nixosConfigurations.iridium = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      specialArgs = {inherit inputs;};
-      modules = [
-        ./hosts/iridium
-        home-manager.nixosModules.home-manager
-        stylix.nixosModules.stylix
-        {
-          home-manager = {
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            users.zhaoxiuya = import ./users/zhaoxiuya/home.nix;
-            extraSpecialArgs = {inherit inputs;};
-            backupFileExtension = "${self.lastModifiedDate}.backup";
-          };
-        }
-      ];
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      stylix,
+      ...
+    }@inputs:
+    {
+      formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixfmt;
+      nixosConfigurations.iridium = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./hosts/iridium
+          home-manager.nixosModules.home-manager
+          stylix.nixosModules.stylix
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.zhaoxiuya = import ./users/zhaoxiuya/home.nix;
+              extraSpecialArgs = { inherit inputs; };
+              backupFileExtension = "${self.lastModifiedDate}.backup";
+            };
+          }
+        ];
+      };
     };
-  };
 }

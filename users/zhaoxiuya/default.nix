@@ -2,13 +2,18 @@
   pkgs,
   config,
   ...
-}: {
+}:
+{
   users.users.zhaoxiuya = {
     isNormalUser = true;
     shell = pkgs.zsh;
     description = "zhaoxiuya";
-    extraGroups = ["networkmanager" "wheel" "libvirtd"];
-    packages = [];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "libvirtd"
+    ];
+    packages = [ ];
   };
 
   programs.zsh.enable = true;

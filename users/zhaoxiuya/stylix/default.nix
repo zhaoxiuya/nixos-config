@@ -3,7 +3,8 @@
   config,
   lib,
   ...
-}: {
+}:
+{
   stylix = {
     enable = true;
     image = ./cern.png;
