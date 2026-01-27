@@ -20,7 +20,6 @@
 
   home.packages = with pkgs; [
     discord
-    zed-editor
   ];
 
   home.stateVersion = "25.11";
