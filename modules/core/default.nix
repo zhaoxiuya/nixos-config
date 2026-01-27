@@ -23,6 +23,7 @@ in
     openssh
     tree
     btop
+    docker
 
     qemu_kvm
     virt-viewer
