@@ -15,7 +15,7 @@
     ./kitty.nix
     ./zed-editor.nix
     ./firefox.nix
-    ./discord.nix
+    ./vesktop.nix
   ];
 
   home.packages = with pkgs; [
