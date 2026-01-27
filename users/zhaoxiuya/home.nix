@@ -14,11 +14,14 @@
     ./zsh.nix
     ./kitty.nix
     ./zed-editor.nix
+    ./firefox.nix
+    ./discord.nix
   ];
 
   home.packages = with pkgs; [
     discord
     zed-editor
+    firefox
   ];
 
   home.stateVersion = "25.11";

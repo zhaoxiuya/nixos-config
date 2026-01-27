@@ -5,6 +5,4 @@
 }:
 {
   imports = [ ./plasma.nix ];
-
-  programs.firefox.enable = true;
 }
