@@ -9,15 +9,15 @@
   };
 
   outputs =
-    {
-      self,
-      nixpkgs,
-      home-manager,
-      stylix,
-      ...
+    { self
+    , nixpkgs
+    , home-manager
+    , stylix
+    , ...
     }@inputs:
     {
-      formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
+      formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixfmt-tree;
+      settings.formatter.nixfmt.options = [ "--width" "120" ];
       nixosConfigurations.iridium = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
