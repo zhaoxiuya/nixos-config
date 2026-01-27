@@ -21,7 +21,6 @@
   home.packages = with pkgs; [
     discord
     zed-editor
-    firefox
   ];
 
   home.stateVersion = "25.11";
