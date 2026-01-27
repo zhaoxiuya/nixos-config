@@ -14,6 +14,12 @@
     ./discord.nix
   ];
 
+  home = {
+    username = "zhaoxiuya";
+    homeDirectory = "/home/zhaoxiuya";
+    stateVersion = "25.11";
+  }
+
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     nanum
@@ -21,6 +27,4 @@
     noto-fonts-cjk-serif
     d2coding
   ];
-
-  home.stateVersion = "25.11";
 }
