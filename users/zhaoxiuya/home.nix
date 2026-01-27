@@ -13,6 +13,7 @@
     ./git.nix
     ./zsh.nix
     ./kitty.nix
+    ./zed-editor.nix
   ];
 
   home.packages = with pkgs; [
