@@ -22,5 +22,9 @@
     discord
   ];
 
+  programs.gtk.enable = true;
+  programs.gtk.gtk2Theme = "Stylix";
+  programs.gtk.gtk3Theme = "Stylix";
+
   home.stateVersion = "25.11";
 }
