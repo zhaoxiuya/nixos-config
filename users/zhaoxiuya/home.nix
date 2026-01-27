@@ -20,7 +20,6 @@
 
   home.packages = with pkgs; [
     discord
-    stylix-gtk-theme
   ];
 
   home.stateVersion = "25.11";
