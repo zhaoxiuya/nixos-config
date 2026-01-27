@@ -1,6 +1,8 @@
-{ pkgs, config, ... }:
-
 {
+  pkgs,
+  config,
+  ...
+}: {
   fonts.packages = with pkgs; [
     nanum-fonts
     noto-fonts-cjk-sans

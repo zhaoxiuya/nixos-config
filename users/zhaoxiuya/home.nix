@@ -1,6 +1,9 @@
-{ pkgs, config, inputs, ... }:
-
 {
+  pkgs,
+  config,
+  inputs,
+  ...
+}: {
   imports = [
     inputs.stylix.homeModules.stylix
     ./stylix

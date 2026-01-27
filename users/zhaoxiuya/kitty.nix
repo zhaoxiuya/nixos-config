@@ -1,6 +1,8 @@
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   programs.kitty = {
     enable = true;
 
@@ -15,4 +17,3 @@
     };
   };
 }
-
