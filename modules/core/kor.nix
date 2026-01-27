@@ -17,11 +17,12 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  programs.kime.enable = true;
+#  programs.kime.enable = true;
 
   i18n.inputMethod = {
     enable = true;
     type = "kime";
+    kime.iconColor = "White";
   };
 
   environment.sessionVariables = {
