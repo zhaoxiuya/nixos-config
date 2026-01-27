@@ -32,19 +32,16 @@
   };
 
   environment.systemPackages = with pkgs; [
-  environment.systemPackages = with pkgs; [
-      (makeDesktopItem {
-        name = "kime";
-        desktopName = "kime";
-        exec = "kime";
-        icon = "kime-hangul-black";
-        type = "Application";
-        extraConfig = {
-          "NoDisplay" = "true";
-          "X-KDE-Wayland-VirtualKeyboard" = "true";
-        };
-      })
-      kime
-    ];
+    (makeDesktopItem {
+      name = "kime";
+      desktopName = "kime";
+      exec = "kime";
+      icon = "kime-hangul-black";
+      type = "Application";
+      extraConfig = {
+        "NoDisplay" = "true";
+        "X-KDE-Wayland-VirtualKeyboard" = "true";
+      };
+    }) kime
   ];
 }
