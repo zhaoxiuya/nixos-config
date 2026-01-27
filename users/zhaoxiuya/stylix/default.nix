@@ -6,8 +6,6 @@
     image = ./cern.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     
-    homeManagerIntegration = true;
-
     fonts = {
       sansSerif = {
         package = pkgs.noto-fonts-cjk-sans;
