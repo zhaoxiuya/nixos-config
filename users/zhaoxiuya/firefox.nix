@@ -9,6 +9,7 @@
       settings = {
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
       };
+      extensions.force = true;
     };
   };
 }
