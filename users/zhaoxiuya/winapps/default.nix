@@ -5,7 +5,7 @@ let
 in
 {
   home.packages = with pkgs; [
-    freerdp3
+    freerdp
     libnotify
     winapps.packages."${system}".winapps
     winapps.packages."${system}".winapps-launcher
