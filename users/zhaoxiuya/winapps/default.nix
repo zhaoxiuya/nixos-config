@@ -9,7 +9,7 @@ in
     libnotify
     winapps.packages."${system}".winapps
     winapps.packages."${system}".winapps-launcher
-  ]
+  ];
 
   home.file.".config/winapps/winapps.conf".text = ''
     RDP_USER="zhaoxiuya"
