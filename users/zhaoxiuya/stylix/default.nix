@@ -29,6 +29,10 @@
     targets = {
       # kde.enable = false;
       # gnome.enable = false;
+      firefox = {
+        enable = true;
+        profileNames = [ "zhaoxiuya" ];
+      };
     };
   };
   qt = {

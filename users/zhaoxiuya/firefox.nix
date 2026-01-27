@@ -3,5 +3,8 @@
 {
   programs.firefox = {
     enable = true;
+    profiles.zhaoxiuya = {
+      isDefault = true;
+    };
   };
 }
