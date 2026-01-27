@@ -9,6 +9,7 @@
       "networkmanager"
       "wheel"
       "libvirtd"
+      "kvm"
     ];
     packages = [ ];
   };
