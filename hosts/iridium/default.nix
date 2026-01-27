@@ -23,7 +23,6 @@
 
   services.libvirtd = {
     enable = true;
-    defaultNetwork = true;
   };
 
   virtualisation.libvirtd.enable = true;
