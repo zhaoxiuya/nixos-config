@@ -19,5 +19,9 @@
     openssh
     tree
     btop
+
+    virt-viewer
+    spice-gtk
+    win-virtio
   ];
 }

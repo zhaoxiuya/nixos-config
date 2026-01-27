@@ -13,6 +13,7 @@
     ./firefox.nix
     ./discord.nix
     ./fonts.nix
+    ./winapps
   ];
 
   programs.home-manager.enable = true;
