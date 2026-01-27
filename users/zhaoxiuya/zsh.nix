@@ -1,8 +1,5 @@
-{
-  pkgs,
-  config,
-  ...
-}:
+{ pkgs, config, ... }:
+
 {
   programs.zsh = {
     enable = true;
@@ -11,7 +8,7 @@
     syntaxHighlighting.enable = true;
     oh-my-zsh = {
       enable = true;
-      theme = "bira";
+      theme = "refined";
       plugins = [
         "git"
         "kubectl"
