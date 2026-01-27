@@ -29,8 +29,6 @@
     };  
   
     targets = {
-      # kde.enable = false;
-      # gnome.enable = false;
       firefox = {
         enable = true;
         colorTheme.enable = true;

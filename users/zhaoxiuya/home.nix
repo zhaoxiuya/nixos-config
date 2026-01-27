@@ -19,7 +19,6 @@
   ];
 
   home.packages = with pkgs; [
-    discord
   ];
 
   home.stateVersion = "25.11";
