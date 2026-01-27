@@ -21,4 +21,11 @@
     enable = true;
     type = "kime";
   };
+
+  enviroment.sessionVariables = {
+    GTK_IM_MODULE = "kime";
+    QT_IM_MODULE = "kime";
+    XMODIFIERS = "@im=kime";
+    GLFW_IM_MODULE = "ibus";
+  };
 }
