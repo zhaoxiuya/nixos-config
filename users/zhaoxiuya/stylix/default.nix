@@ -3,6 +3,7 @@
 {
   stylix = {
     enable = true;
+    autoEnable = true;
     image = ./cern.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
 
@@ -34,9 +35,6 @@
         fonts.enable = true;
         inputs.enable = true;
         profileNames = [ "zhaoxiuya" ];
-      };
-      vesktop = {
-        enable = true;
       };
     };
   };
