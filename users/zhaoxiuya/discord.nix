@@ -2,7 +2,7 @@
 
 {
   programs.nixcord = {
-    enabled = true;
+    enable = true;
     user = "zhaoxiuya";
   };
 }
