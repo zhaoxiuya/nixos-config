@@ -12,9 +12,10 @@ in
   ];
 
   home.file.".config/winapps/winapps.conf".text = ''
-    RDP_USER="zhaoxiuya"
-    RDP_PASS="1234"
-    RDP_IP="192.168.122.105"
-    VM_NAME="win10"
+    WA_FLAVOR="libvirt"
+    WA_RDP_USER="zhaoxiuya"
+    WA_RDP_PASS="1234"
+    WA_RDP_IP="192.168.122.105"
+    WA_VM_NAME="win10"
   '';
 }
