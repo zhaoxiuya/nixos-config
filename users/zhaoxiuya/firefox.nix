@@ -3,13 +3,13 @@
 {
   programs.firefox = {
     enable = true;
-#    profiles.zhaoxiuya = {
+    profiles.zhaoxiuya = {
 #      isDefault = true;
 #      #path = "zhaoxiuya";
 #      settings = {
 #        "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
 #      };
-#      extensions.force = true;
-#    };
+      extensions.force = true;
+    };
   };
 }
