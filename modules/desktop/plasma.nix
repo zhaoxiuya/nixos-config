@@ -8,8 +8,8 @@
   services.xserver.xkb = {
     layout = "us";
     variant = "";
-  }; 
- 
+  };
+
   environment.systemPackages = with pkgs; [
     kdePackages.spectacle
     kdePackages.qtstyleplugin-kvantum

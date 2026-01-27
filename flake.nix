@@ -9,23 +9,23 @@
   };
 
   outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs: {
-   formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
-   nixosConfigurations.iridium = nixpkgs.lib.nixosSystem {
+    formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixpkgs-fmt;
+    nixosConfigurations.iridium = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      specialArgs = { inherit inputs; }; 
+      specialArgs = { inherit inputs; };
       modules = [
-      	./hosts/iridium
-      	home-manager.nixosModules.home-manager
+        ./hosts/iridium
+        home-manager.nixosModules.home-manager
         stylix.nixosModules.stylix
         {
-	        home-manager = {
-	          useGlobalPkgs = true;
-	          useUserPackages = true;
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
             users.zhaoxiuya = import ./users/zhaoxiuya/home.nix;
-	          extraSpecialArgs = { inherit inputs; };
+            extraSpecialArgs = { inherit inputs; };
             backupFileExtension = "backup";
-	        };
-      	}
+          };
+        }
       ];
     };
   };

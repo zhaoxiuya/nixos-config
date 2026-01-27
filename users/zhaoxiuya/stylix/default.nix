@@ -8,7 +8,7 @@
 
     fonts = {
       sansSerif = {
-       package = pkgs.noto-fonts-cjk-sans;
+        package = pkgs.noto-fonts-cjk-sans;
         name = "Noto Sans CJK KR";
       };
       serif = {

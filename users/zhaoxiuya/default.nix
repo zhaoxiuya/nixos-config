@@ -6,7 +6,7 @@
     shell = pkgs.zsh;
     description = "zhaoxiuya";
     extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
-    packages = [];
+    packages = [ ];
   };
 
   programs.zsh.enable = true;
