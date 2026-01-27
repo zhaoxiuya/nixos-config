@@ -2,7 +2,7 @@
 
 
 let
-  system = pkgs.system
+  system = pkgs.system;
 in
 {
   imports = [
