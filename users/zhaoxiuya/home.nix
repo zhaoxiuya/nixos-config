@@ -3,7 +3,7 @@
 {
   imports = [
     # inputs.stylix.homeModules.stylix
-    inputs.nixcord.homeModules.nixcord
+    # inputs.nixcord.homeModules.nixcord
     ./stylix
     ./neovim.nix
     ./git.nix
