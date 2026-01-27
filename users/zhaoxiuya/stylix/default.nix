@@ -6,8 +6,6 @@
     image = ./cern.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
 
-    #homeManagerIntegration = true; 
-
     fonts = {
       sansSerif = {
         package = pkgs.noto-fonts-cjk-sans;
@@ -26,8 +24,8 @@
         name = "Noto Color Emoji";
       };
       sizes.terminal = 12;
-    };  
-  
+    };
+
     targets = {
       firefox = {
         enable = true;
@@ -42,7 +40,6 @@
       };
     };
   };
-
 
   qt = {
     enable = true;
