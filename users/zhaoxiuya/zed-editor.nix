@@ -2,7 +2,7 @@
 
 {
   programs.zed-editor = {
-    enable = true
+    enable = true;
     extensions = [ "nix" "make" ];
     userSettings = {
         assistant = {
