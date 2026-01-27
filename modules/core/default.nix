@@ -1,4 +1,4 @@
-{ pkgs, config,... }:
+{ pkgs, config, system ? pkgs.system,... }:
 
 {
   imports = [
@@ -24,5 +24,7 @@
     virt-viewer
     spice-gtk
     virtio-win
+    winapps.packages."${system}".winapps
+    winapps.packages."${system}".winapps-launcher
   ];
 }
