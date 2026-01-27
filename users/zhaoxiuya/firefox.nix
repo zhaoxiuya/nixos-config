@@ -5,6 +5,9 @@
     enable = true;
     profiles.zhaoxiuya = {
       isDefault = true;
+      settings = {
+        "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+      };
     };
   };
 }
