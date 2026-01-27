@@ -24,4 +24,10 @@
     enable = true;
     type = "kime";
   };
+
+  environment.variables = {
+    QT_IM_MODULE = "kime";
+    GTK_IM_MODULE = "kime";
+    XMODIFIERS = "@im=kime";
+  };
 }
