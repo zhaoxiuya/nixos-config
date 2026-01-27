@@ -22,6 +22,6 @@
 
     virt-viewer
     spice-gtk
-    win-virtio
+    virtio-win
   ];
 }
