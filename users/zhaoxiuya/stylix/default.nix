@@ -1,9 +1,5 @@
-{
-  pkgs,
-  config,
-  lib,
-  ...
-}:
+{pkgs, config, lib,... }:
+
 {
   stylix = {
     enable = true;
@@ -38,6 +34,6 @@
   qt = {
     enable = true;
     platformTheme.name = lib.mkForce "kde";
-    style.name = lib.mkForce "breeze";
+    style.name = lib.mkForce "kvantum";
   };
 }
