@@ -23,4 +23,6 @@
     homeDirectory = "/home/zhaoxiuya";
     stateVersion = "25.11";
   };
+
+  services.dunst.enable = true;
 }
