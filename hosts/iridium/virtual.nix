@@ -14,6 +14,7 @@
         swtpm.enable = true;
       };
     };
+
     docker.enable = true;
   };
 
