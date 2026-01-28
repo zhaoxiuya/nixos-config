@@ -13,6 +13,7 @@
         runAsRoot = true;
         swtpm.enable = true;
       };
+      networks.default.enable = true;
     };
     docker.enable = true;
   };
