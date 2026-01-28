@@ -20,7 +20,7 @@
 
   hardware.graphics.enable = true;
 
-  environment.systemPackages = with pkgs [
+  environment.systemPackages = with pkgs; [
     docker
     qemu_kvm
     virt-viewer
@@ -28,5 +28,4 @@
     virtio-win
     netcat-gnu
   ];
-
 }
