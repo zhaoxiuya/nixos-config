@@ -1,3 +1,12 @@
+# DO NOT CONFIG #
+# DO NOT CONFIG #
+# DO NOT CONFIG #
+# DO NOT CONFIG #
+# DO NOT CONFIG #
+# DO NOT CONFIG #
+# DO NOT CONFIG #
+# DO NOT CONFIG #
+
 { config, lib, pkgs, modulesPath, ... }:
 
 {

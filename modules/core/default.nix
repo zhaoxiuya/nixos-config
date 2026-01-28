@@ -1,6 +1,5 @@
 { pkgs, config, inputs, ... }:
 
-
 let
   system = pkgs.system;
 in
@@ -23,12 +22,5 @@ in
     openssh
     tree
     btop
-    docker
-
-    qemu_kvm
-    virt-viewer
-    spice-gtk
-    virtio-win
-    netcat-gnu
   ];
 }
