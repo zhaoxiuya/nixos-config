@@ -13,6 +13,7 @@
     ./firefox.nix
     ./discord.nix
     ./fonts.nix
+    ./wine.nix
   ];
 
   services.dunst.enable = true;
