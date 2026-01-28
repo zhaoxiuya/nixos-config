@@ -5,6 +5,7 @@
     enable = true;
     extensions = [ "nix" "make" ];
     userSettings = {
+        disable_ai = true;
         assistant = {
             enabled = false;
         };
