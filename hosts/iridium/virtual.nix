@@ -12,6 +12,7 @@
         package = pkgs.qemu_kvm;
         runAsRoot = true;
         swtpm.enable = true;
+        ovmf.enable = true;
       };
     };
 
@@ -21,8 +22,6 @@
   hardware.graphics.enable = true;
 
   environment.systemPackages = with pkgs; [
-    docker
-    qemu_kvm
     virt-viewer
     spice-gtk
     virtio-win
