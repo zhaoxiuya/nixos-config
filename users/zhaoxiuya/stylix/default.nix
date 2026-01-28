@@ -5,7 +5,7 @@
     enable = true;
     autoEnable = true;
     image = ./cern.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-latte.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
 
     fonts = {
       sansSerif = {
