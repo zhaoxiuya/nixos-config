@@ -28,4 +28,4 @@
     virtio-win
     netcat-gnu
   ];
-}
+};
