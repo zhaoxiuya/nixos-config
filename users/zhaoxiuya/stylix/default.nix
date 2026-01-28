@@ -5,7 +5,7 @@
     enable = true;
     autoEnable = true;
     image = ./cern.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/github-dark.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-latte.yaml";
 
     fonts = {
       sansSerif = {
