@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   boot.kernelModules = [ "kvm-intel" ];
@@ -25,5 +25,10 @@
     spice-gtk
     virtio-win
     netcat-gnu
+    freerdp
+    libnotify
+    xdg-utils
+    inputs.winapps.packages."${system}".winapps
+    inputs.winapps.packages."${system}".winapps-launcher
   ];
 }
