@@ -24,7 +24,7 @@
           stylix.nixosModules.stylix {
             home-manager = {
               useGlobalPkgs = true;
-              useUserPackages = true;
+              useUserPackages = false;
               users.zhaoxiuya = import ./users/zhaoxiuya/home.nix;
               extraSpecialArgs = { inherit inputs; };
               backupFileExtension = "${self.lastModifiedDate}.backup";
