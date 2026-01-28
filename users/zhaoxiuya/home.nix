@@ -15,6 +15,12 @@
     ./fonts.nix
   ];
 
+  services.dunst.enable = true;
+
+  home.packages = with pkgs; [
+    winboat
+  ];
+
   programs.home-manager.enable = true;
 
   home = {
@@ -22,6 +28,4 @@
     homeDirectory = "/home/zhaoxiuya";
     stateVersion = "25.11";
   };
-
-  services.dunst.enable = true;
 }
