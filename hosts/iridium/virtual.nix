@@ -2,8 +2,8 @@
 
 {
   boot.kernelModules = [ "kvm-intel" ];
-
   programs.virt-manager.enable = true;
+  hardware.graphics.enable = true;
 
   virtualisation = {
     libvirtd = {
@@ -14,11 +14,8 @@
         swtpm.enable = true;
       };
     };
-
     docker.enable = true;
   };
-
-  hardware.graphics.enable = true;
 
   environment.systemPackages = with pkgs; [
     virt-viewer
