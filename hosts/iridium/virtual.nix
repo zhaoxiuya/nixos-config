@@ -13,7 +13,9 @@
         runAsRoot = true;
         swtpm.enable = true;
       };
-      networks.default.enable = true;
+      extraConfig = ''
+        network_default = "default"
+      '';
     };
     docker.enable = true;
   };
