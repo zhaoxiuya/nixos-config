@@ -5,7 +5,7 @@
     enable = true;
     autoEnable = true;
     image = ./cern.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/github-dark.yaml";
 
     fonts = {
       sansSerif = {
