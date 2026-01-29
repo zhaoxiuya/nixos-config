@@ -5,7 +5,7 @@ let
 in
 {
   imports = [
-    ./kime.nix
+    ./korean.nix # kime + locale
     ./nix.nix
     ./bluetooth.nix
     ./audio.nix
