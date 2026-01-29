@@ -7,5 +7,8 @@
   home.packages = with pkgs; [
     winboat
     clang-tools
+    fortls
+    nil
+    nixd
   ];
 }
