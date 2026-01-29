@@ -18,7 +18,6 @@
         };
         vim_mode = false;
         ui_font_size = lib.mkForce 20.0;
-        ui_rulers = [80];
     };
   };
 }
