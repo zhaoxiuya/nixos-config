@@ -14,12 +14,7 @@
     ./discord.nix
     ./fonts.nix
     ./wine.nix
-  ];
-
-  services.dunst.enable = true;
-
-  home.packages = with pkgs; [
-    winboat
+    ./etc.nix
   ];
 
   programs.home-manager.enable = true;
