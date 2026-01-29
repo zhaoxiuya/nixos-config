@@ -9,6 +9,7 @@
       "toml"
       "clangd"
       "fortran"
+      "git-firefly"
     ];
     userSettings = {
         disable_ai = true;
