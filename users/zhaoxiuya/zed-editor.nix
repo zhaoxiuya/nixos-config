@@ -16,8 +16,8 @@
         assistant = {
             enabled = false;
         };
-        hour_format = "hour24";
         vim_mode = false;
+        ui_font_size = 20.0
     };
   };
 }
