@@ -17,7 +17,7 @@
             enabled = false;
         };
         vim_mode = false;
-        ui_font_size = 20.0
+        ui_font_size = 20.0;
     };
   };
 }
