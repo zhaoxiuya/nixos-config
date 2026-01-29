@@ -3,7 +3,13 @@
 {
   programs.zed-editor = {
     enable = true;
-    extensions = [ "nix" "make" ];
+    extensions = [
+      "nix"
+      "make"
+      "toml"
+      "clangd"
+      "fortran"
+    ];
     userSettings = {
         disable_ai = true;
         assistant = {
