@@ -26,6 +26,8 @@
     QT_IM_MODULE = "kime";
     GTK_IM_MODULE = "kime";
     XMODIFIERS = "@im=kime";
+    ANY_IM_MODULE = "kime";
+    GLFW_IM_MODULE = "ibus";
   };
 
   environment.systemPackages = with pkgs; [
